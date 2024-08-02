@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/extensions/fontawesome-free-6.5.1-web/css/all.css">
+</head>
+<body>
+    <div class="form-register">
+        <form name="formRegister" class="form form-register__form">
+            <p class="form__title">Please sign up</p>
+            <div class="container-label">
+                <label class="input-label" for="firstName">First name</label>
+                <input placeholder="First name" id="firstName" type="text" class="input">
+                <i style="display: none;" class="fa-solid fa-check"></i>
+                <i style="display: none;" class="fa-solid fa-xmark"></i>
+                <div style="display: none;" class="message-valid">
+                    <p class="message-valid__text">Please provide a valid Fitst name.</p>
+                </div>
+            </div>
+            <div class="container-label marTop30">
+                <label class="input-label" for="lastName">Last name</label>
+                <input placeholder="Last name" id="lastName" type="text" class="input">
+                <i style="display: none;" class="fa-solid fa-check"></i>
+                <i style="display: none;" class="fa-solid fa-xmark"></i>
+                <div style="display: none;" class="message-valid">
+                    <p class="message-valid__text">Please provide a valid Last name.</p>
+                </div>
+            </div>
+            <div class="container-label marTop30">
+                <label class="input-label" for="emailAddress">Email address</label>
+                <input id="email" placeholder="Email address" id="emailAddress" type="text" class="input">
+                <i style="display: none;" class="fa-solid fa-check"></i>
+                <i style="display: none;" class="fa-solid fa-xmark"></i>
+                <div style="display: none;" class="message-valid">
+                    <p class="message-valid__text">Please provide a valid Email address.</p>
+                </div>
+            </div>
+            <div class="container-label marTop30">
+                <label class="input-label" for="password">Password</label>
+                <input placeholder="Password" id="password" type="password" class="input">
+                <i style="display: none;" class="fa-solid fa-check"></i>
+                <i style="display: none;" class="fa-solid fa-xmark"></i>
+                <div style="display: none;" class="message-valid">
+                    <p class="message-valid__text">Please provide a valid Password.</p>
+                </div>
+            </div>
+            <div class="checkbox-container marTop30">
+                <label class="checkbox-label"><input class="checkbox" type="checkbox">I agree with Privacy Policy.</label>
+            </div>
+            <button disabled id="button-sign" class="button marTop20">Sign up</button>
+        </form>
+        <div style="display: none;" class="window">
+            <div class="window__true">
+                <div class="window__block-top">
+                    <div class="window__logo">
+                        <i class="fa-solid fa-check fa-check--big"></i>
+                    </div>
+                </div>
+                <div class="window__block-bottom">
+                    <p class="window__title">Great!</p>
+                    <p class="window__text">Your account has been created successfully.</p>
+                    <button class="window__button" id="windowButton">Start Exploring<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
